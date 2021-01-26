@@ -1,0 +1,60 @@
+﻿@page "{handler?}"
+@model Ext.Net.Examples.Pages.samples.layout.formlayout.overview.IndexModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Kullanıcı Kayıt Formu
+    </title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>
+        Kullanıcı Kayıt Formu
+    </h1>
+
+    
+    <ext-panel id="Panel4"
+               width="360"
+               buttonAlign="Center"
+               layout="Fit" >
+        <items>
+            <ext-tabPanel activeTab="0">
+                <items>
+                    <ext-panel title="Personal Details" bodyPadding="18" layout="Form">
+                        <defaults>
+                            <ext-add key="labelWidth" value="75" mode="Raw" />
+                        </defaults>
+                        <items>
+                            <ext-textField fieldLabel="First Name" allowBlank="false" />
+                            <ext-textField fieldLabel="Last Name" />
+                            <ext-textField fieldLabel="Company" />
+                            <ext-textField fieldLabel="Email" />
+                        </items>
+                    </ext-panel>
+                    <ext-panel title="Phone Numbers" bodyPadding="18" layout="Form">
+                        <defaults>
+                            <ext-add key="labelWidth" value="75" mode="Raw" />
+                        </defaults>
+                        <items>
+                            <ext-textField fieldLabel="Home" text="(888) 555-1212" />
+                            <ext-textField fieldLabel="Business" />
+                            <ext-textField fieldLabel="Mobile" />
+                            <ext-textField fieldLabel="Fax" />
+                        </items>
+                    </ext-panel>
+                </items>
+            </ext-tabPanel>
+        </items>
+        <buttons>
+            <ext-button text="Save" />
+            <ext-button text="Cancel" />
+        </buttons>
+    </ext-panel>
+
+
+</body>
+</html>
